@@ -8,7 +8,7 @@ If you are as lazy as I am, and you are a regular reader of the wenxuecity websi
 [2]: http://vimperator.org/vimperator
 
 # Installation
-I'm supposing you already have Firefox[1] installed, and know how to install vimperator[2] (it's very easy, it takes just several seconds).
+I'm supposing you already have [Firefox][1] installed, and know how to install [vimperator][2] (it's very easy, it takes just several seconds).
 
 For Windows system:
 
@@ -54,7 +54,7 @@ You may also use the options to automate what pages you want. Here's how.
  * scripts for installing the plugin
  * more options for other forums
  
- # Notes
+# Notes
  
  This plugin is depends on the design of www.wenxuecity.com. When they change their structure, it might break this plugin, but as you might understand, the code is pretty straight forward, you should be able to modify the code to accomplish the changes. On the other hand, I will be keeping an eye on the site, and maintenance this plugin regularly to make sure it is working
 
