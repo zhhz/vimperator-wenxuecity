@@ -28,7 +28,7 @@ Now firefox will automatically load all the today's news. Happy surfing!
 
 The configuration is done in `.vimperatorrc` if you are on linux or Mac OS X. But you can totally skip the configuration, you can do it by the command. 
 
- * `liberator.globalVariables.wenxuecity_forums=news|ent` sets the default forums you want to load. 
+ * `liberator.globalVariables.wenxuecity_forums=news ent` sets the default forums you want to load. 
 
 # Usage
 
@@ -37,14 +37,20 @@ TODO list the options
 
 ## Advanced usage
 
-You may also use the options to automate what pages you want. Here's how.
+You may also use the options to automate what forum you want to read. Here's how.
 
- TODO
+ `:wen`
+ then press space key, you will see options:
+ `-date` and `-forum`
+ then you can choose either of them, e.g.
+ `-f`
+ if you press space, you will gets all the options for available forums:
+
 
 # Bugs, Feature Requests, etc. 
 
- * [Source][2]
- * [Issue tracker][3]
+ * [Source][3]
+ * [Issue tracker][4]
 
 [3]: http://github.com/zhhz/vimperator-wenxuecity
 [4]: http://github.com/zhhz/vimperator-wenxuecity/issues
