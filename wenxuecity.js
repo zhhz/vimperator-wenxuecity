@@ -4,9 +4,9 @@ wenxuecity.url = "www.wenxuecity.com";
 
 //{fourm: [[forum_home_url, forum_post_base_url]]}
 wenxuecity.forums = {
-  news:   [wenxuecity.url + "/news/more", wenxuecity.url],
-  gossip: [wenxuecity.url + "/news/gossip", wenxuecity.url],
-  ent:    [wenxuecity.url + "/news/ent", wenxuecity.url],
+  news:   [wenxuecity.url + "/news/morenews", wenxuecity.url],
+  gossip: [wenxuecity.url + "/news/gossipmore", wenxuecity.url],
+  ent:    [wenxuecity.url + "/news/entmore", wenxuecity.url],
   // joke:   ["bbs.wenxuecity.com/joke/?reply=0", "bbs.wenxuecity.com/joke/"]
   bbs:   ["bbs.wenxuecity.com/", "bbs.wenxuecity.com/"]
 };
