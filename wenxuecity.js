@@ -52,18 +52,18 @@ wenxuecity.load = function(forums, date){
 
   // TODO: pagination
   function forumHomePage(forumHomeUrl, baseUrl){
-    gBrowser.getBrowserForTab(gBrowser.addTab(forumHomeUrl)).addEventListener("load", 
+    gBrowser.getBrowserForTab(gBrowser.addTab(forumHomeUrl)).addEventListener("load",
         function processPostList(event){
-          // alert(event.originalTarget);
           var es = event.originalTarget.getElementsByTagName("small");
           var s = date.split('/');
-          s = parseInt(s[1], 10).toString() + "/" + parseInt(s[2], 10).toString() + "/" + (parseInt(s[0], 10) - 2000).toString();
+          s = s[1] + "/" + s[2] + "/" + s[0];
           // var reg = new RegExp(/12\/7\/11/);
           var reg = new RegExp(s);
           for(var j = 0; j < es.length; j++){
             var h = es[j].innerHTML; // parentNode.childNodes[0].innerHTML;
             if(h.match(reg)){
-              gBrowser.getBrowserForTab(gBrowser.addTab(baseUrl + es[j].parentNode.getAttribute("class").split('-')[1] + '.html')).addEventListener("load", processPost, true);
+var url = baseUrl + es[j].parentNode.getElementsByTagName("a")[0].getAttribute('href').split('/')[1];
+              gBrowser.getBrowserForTab(gBrowser.addTab(url)).addEventListener("load", processPost, true);
               // TODO debug only, remove me
               // break;
             }
